@@ -6,6 +6,11 @@
     height: 80px;
     background-color: white;
 }
+.navbar--img {
+    height: 100px;
+    padding-top: 10px;
+    /* width: 50px; */
+}
 .navbar-title a {
     color: #1A8EFD;
     letter-spacing: .6px;

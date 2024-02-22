@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Logo from '../Assets/logo.png';
 import {
   faCommentDots,
   faBars,
@@ -31,7 +32,8 @@ function Navbar() {
     <div className="navbar-section">
       <h1 className="navbar-title">
         <Link to="/">
-          Health <span className="navbar-sign">+</span>
+          {/* Health <span className="navbar-sign">+</span> */}
+          <img src={Logo} className="navbar--img" alt="logo"/>
         </Link>
       </h1>
 
@@ -44,34 +46,27 @@ function Navbar() {
         </li>
         <li>
           <a href="#services" className="navbar-links">
-            Services
-          </a>
-        </li>
-        <li>
-          <a href="#about" className="navbar-links">
             About
           </a>
         </li>
         <li>
+          <a href="#about" className="navbar-links">
+            Departments
+          </a>
+        </li>
+        <li>
           <a href="#reviews" className="navbar-links">
-            Reviews
+            FAQ
           </a>
         </li>
         <li>
           <a href="#doctors" className="navbar-links">
-            Doctors
+            Contacts
           </a>
         </li>
       </ul>
 
-      <button
-        className="navbar-btn"
-        type="button"
-        disabled={isButtonDisabled}
-        onClick={handleChatBtnClick}
-      >
-        <FontAwesomeIcon icon={faCommentDots} /> Live Chat
-      </button>
+
 
       {/* Mobile */}
       <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>

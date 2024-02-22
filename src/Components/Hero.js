@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Doctor from "../Assets/doctor-picture.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate  } from "react-router-dom";
+import {
+  faCalendarCheck,
+  faAngleUp,
+  faHeartPulse,
+} from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 import "../Styles/Hero.css";
 
 function Hero() {
@@ -36,23 +40,21 @@ function Hero() {
     <div className="section-container">
       <div className="hero-section">
         <div className="text-section">
-          <p className="text-headline">❤️ Health comes first</p>
-          <h2 className="text-title">
-            Find your Doctor and make an Appointments
-          </h2>
-          <p className="text-descritpion">
-            Talk to online doctors and get medical advice, online prescriptions,
-            refills and medical notes within minutes. On-demand healthcare
-            services at your fingertips.
-          </p>
-          <button
-            className="text-appointment-btn"
-            type="button"
-            onClick={handleBookAppointmentClick}
-          >
-            <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
-          </button>
-          <div className="text-stats">
+          <div>
+            <h2 className="text-title">Professional Family Health Care</h2>
+            <p className="text-descritpion">
+              HEALTHCARE WITHOUT BOUNDARIES INNOVATION WITHOUT LIMITS
+            </p>
+            <div className="hero-logos">
+              <FontAwesomeIcon icon={faHeartPulse} size="3x" />
+              <FontAwesomeIcon icon={faHeartPulse} size="3x" />
+              <FontAwesomeIcon icon={faHeartPulse} size="3x" />
+            </div>
+          </div>
+          <div className="hero-image-section">
+            <img className="hero-image1" src={Doctor} alt="Doctor" />
+          </div>
+          {/* <div className="text-stats">
             <div className="text-stats-container">
               <p>145k+</p>
               <p>Receive Patients</p>
@@ -67,12 +69,30 @@ function Hero() {
               <p>10+</p>
               <p>Years of Experience</p>
             </div>
+          </div> */}
+        </div>
+
+        <div className="hero-text-bubble-container">
+          <div className="hero-text-bubble">
+            <h3>OPENING HOURS</h3>
+            <p>Weekdays: 10:00 AM to 6:00 PM</p>
+            <p>Weekends: 8:00 AM to 8:00 PM</p>
+            <button>Contact Us</button>
+          </div>
+          <div className="hero-text-bubble">
+            <h3>DO YOU WANT TO MAKE AN APPOINTMENT?</h3>
+            <button>Book Now</button>
+          </div>
+          <div className="hero-text-bubble">
+            <h4>1-800-600-380</h4>
+            <h3>EMERGENCY SERVICE</h3>
+            <button>See More</button>
           </div>
         </div>
 
-        <div className="hero-image-section">
+        {/* <div className="hero-image-section">
           <img className="hero-image1" src={Doctor} alt="Doctor" />
-        </div>
+        </div> */}
       </div>
 
       <div
