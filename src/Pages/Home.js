@@ -12,14 +12,12 @@ function Home() {
   return (
     <div className="home-section">
       <Navbar />
-      hi
       <Hero />
-      hi
       <Info />
-      <About />
+      {/* <About />
       <BookAppointment />
       <Reviews />
-      <Doctors />
+      <Doctors /> */}
       <Footer />
     </div>
   );

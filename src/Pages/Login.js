@@ -1,14 +1,12 @@
+import LoginForm from "../Components/LoginForm";
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import LoginForm from "./LoginForm";
-
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";;
 function Login() {
     return (
-        <div className="home-section">
-          <Navbar />
-          <LoginForm />
-          <Footer />
+        <div className="login-section">
+          
+          <LoginForm/>
         </div>
       );}
 

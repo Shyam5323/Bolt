@@ -5,14 +5,14 @@ import Home from "./Pages/Home";
 import Legal from "./Pages/Legal";
 import NotFound from "./Pages/NotFound";
 import Appointment from "./Pages/Appointment";
-import LoginForm from "./Components/LoginForm";
+import Login from "./Pages/Login";
 
 function App() {
   return (
     <div className="App">
       <Router basename="/Health-Plus">
         <Routes>
-          <Route path="/login" element={<LoginForm />}></Route>
+          <Route path="/login" element={<Login />}></Route>
           <Route path="/" element={<Home />} />
           <Route path="/legal" element={<Legal />} />
           <Route path="/appointment" element={<Appointment />} />
