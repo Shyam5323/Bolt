@@ -64,6 +64,11 @@ function Navbar() {
             Contacts
           </a>
         </li>
+        {/* <li>
+            <Link to="/login" className="navbar-links">
+            Login
+          </Link>
+        </li> */}
       </ul>
 
 
@@ -101,9 +106,7 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a onClick={openNav} href="#contact">
-              Contact
-            </a>
+            
           </li>
         </ul>
       </div>

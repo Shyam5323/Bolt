@@ -12,7 +12,9 @@ function Home() {
   return (
     <div className="home-section">
       <Navbar />
+      hi
       <Hero />
+      hi
       <Info />
       <About />
       <BookAppointment />
