@@ -1,0 +1,119 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 10% 65% 25%;
+  grid-template-rows: auto;
+  height: 100vh;
+}
+
+.left-navbar {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.main {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #d5ebf9;
+}
+
+.right-side {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  background-color: #2B4CA2;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  row-gap: 20px;
+  justify-items: center;
+}
+.right-profile {
+    width: 300px;
+    background-color: transparent;
+    border: 2px solid white;
+    grid-row: 1/span 3;
+    border-radius: 15px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.right-calendar {
+    width: 300px;
+    background-color: transparent;
+    border: 2px solid white;
+    grid-row: 4/span 5;
+    border-radius: 15px;
+}
+.dashboard-title {
+  grid-column: 1 / span 3;
+  margin: 5px;
+}
+
+.greeting {
+  grid-column: 1 / span 3;
+  margin: 0px 25px;
+  margin-bottom:15px ;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.health-stats {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 25px;
+  border-radius: 15px;
+}
+.steps {
+  background-color: white;
+  margin: 0px 25px;
+  padding: 20px;
+  border-radius: 15px;
+}
+.bp {
+  background-color: white;
+  margin: 0px 25px;
+  padding: 20px;
+  border-radius: 15px;
+}
+.heartrate {
+  background-color: white;
+  margin: 0px 25px;
+  border-radius: 15px;
+
+  padding: 20px;
+}
+
+.row3-col1 {
+  /* grid-row: 3; */
+  grid-column: 1;
+  margin:0px 25px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.row4-col1 {
+  /* grid-row: 4; */
+  grid-column: 1;
+  margin: 25px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.row3-4-col2-3 {
+  grid-row: 4 / span 2;
+  grid-column: 2 / span 2;
+  margin: 25px;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+}
+

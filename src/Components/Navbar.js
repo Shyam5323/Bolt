@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Logo from '../Assets/logo.png';
+import Logo from '../Assets/img/logo.png';
 import {
   faCommentDots,
   faBars,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { UseNavigate } from "react-router-dom";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
-
+  const navigate = useNavigate();
   const openNav = () => {
     setNav(!nav);
   };
@@ -27,6 +28,9 @@ function Navbar() {
       });
     }
   };
+  const handleLoginClick = () => {
+    navigate('/login')
+  }
 
   return (
     <div className="navbar-section">
@@ -63,6 +67,11 @@ function Navbar() {
           <a href="#doctors" className="navbar-links">
             Contacts
           </a>
+        </li>
+        <li>
+          <button onClick={handleLoginClick} > 
+            Login
+          </button>
         </li>
       </ul>
 
