@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: inline;
+  direction: row;
+  height: 100vh;
+  background-color: #FFF6E9
+}
+
+
+.centered-content {
+  text-align: center;
+}
+
+.doctor-1{
+  margin: 20px;
+  height: 300px;
+  width: 320px;
+}
+
+pre{
+  color: #e3b887;
+}
+.logo{
+  height: 100px;
+  width: 374px;
+}
+.goals{
+  display: block;
+}
+.loginForm {
+  /* display: flex; */
+  /* flex: 1; */
+  
+}
+.login-container {
+  /* margin-left: 90px;
+  padding: 20px;
+  max-width: 400px; 
+  width: 100%;
+  display: flexbox; */
+  /* display: block; */
+  /* width: 100%; */
+  margin: 40px;
+  margin: 0 100px;
+  border-radius: 20px;  
+}
+.tex{
+  position: absolute;
+  left:40px;top:40px;
+  
+}
+.doc1{
+  position: absolute;
+  right: 20px;
+
+}
+.doc2{
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+}
+.login-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.login-container2 {
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  background-color: #FFE6C9;
+  width: 75%;
+  height: 88vh;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.head{
+  background-color: #D7FBC5;
+  height: 12vh;
+}
+p{
+  margin-bottom: 20px;
+}
+h1{
+  margin-bottom: 20px;
+}
+h2 {
+  margin-bottom: 20px;
+}
+h3{
+  margin-top: 20px;
+}
+hr{
+  display: flex;
+
+}
+input[type="email"],
+input[type="password"],
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+
+button[type="submit"],
+.google-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.google-btn {
+  margin-bottom: 20px;
+}
+
+.create-account {
+  margin-top: 20px;
+}
+
+.create-account span {
+  color: #888;
+}
+
+.create-account a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.create-account a:hover {
+  text-decoration: underline;
+}

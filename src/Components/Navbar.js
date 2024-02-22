@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNavigate } from "react-router-dom";
 import Logo from '../Assets/img/logo.png';
 import {
   faCommentDots,
@@ -28,8 +29,8 @@ function Navbar() {
       });
     }
   };
-  const handleLoginClick = () => {
-    navigate('/login')
+  const handleLogin = () =>{
+    navigate("\login");
   }
 
   return (
@@ -69,9 +70,7 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <button onClick={handleLoginClick} > 
-            Login
-          </button>
+            <button onClick={handleLogin}>Login</button>
         </li>
       </ul>
 
@@ -110,9 +109,7 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a onClick={openNav} href="#contact">
-              Contact
-            </a>
+            
           </li>
         </ul>
       </div>
