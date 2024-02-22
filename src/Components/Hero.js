@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Doctor from "../Assets/doctor-picture.png";
+import Doctor from "../Assets/img/doctor-picture.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarCheck,
@@ -81,7 +81,11 @@ function Hero() {
           </div>
           <div className="hero-text-bubble">
             <h3>DO YOU WANT TO MAKE AN APPOINTMENT?</h3>
-            <button>Book Now</button>
+            <button
+               className="text-appointment-btn"
+               type="button"
+               onClick={handleBookAppointmentClick}
+            >Book Now</button>
           </div>
           <div className="hero-text-bubble">
             <h4>1-800-600-380</h4>

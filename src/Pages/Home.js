@@ -13,8 +13,8 @@ function Home() {
     <div className="home-section">
       <Navbar />
       <Hero />
-      <Info />
-      {/* <About />
+      {/* <Info />
+      <About />
       <BookAppointment />
       <Reviews />
       <Doctors /> */}

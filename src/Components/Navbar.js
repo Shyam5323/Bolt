@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Logo from '../Assets/logo.png';
 import { useNavigate } from "react-router-dom";
+import Logo from '../Assets/img/logo.png';
 import {
   faCommentDots,
   faBars,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { UseNavigate } from "react-router-dom";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
